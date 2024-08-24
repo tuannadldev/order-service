@@ -1,0 +1,29 @@
+server:
+  AppVersion: 1.0.0
+  Port: :7071
+  DevMode: true
+  SSL: true
+  WaitShotDownDuration: 5
+  CtxDefaultTimeout: 10
+  Debug: true
+  Timeout: 15
+  MaxConnectionAge: 5
+  ServiceName: OrderService
+  TimeConvert: "2006-01-02"
+  Env: dev
+
+logger:
+  Development: true
+  Encoder: json
+  LogLevel: debug
+
+redis:
+  DB: 0
+  MinIdleConns: 200
+  Password: ''
+  PoolSize: 12000
+  PoolTimeout: 240
+  RedisAddr: 127.0.0.1:6379
+  RedisDb: 0
+  RedisDefaultdb: 0
+  RedisPassword:
